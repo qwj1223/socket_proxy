@@ -1,0 +1,50 @@
+########################################################
+#
+# 后台动态库 Makefile 的写法
+#
+########################################################
+
+#include $(OB_REL)/etc/NGbasedefine.mk
+
+########################################################
+
+DEST = public_socket_proxy
+
+DEST_TYPE = DLL
+
+DEST_SOURCES = 	mdb_proxy_sockapi.cpp
+
+#SDL_DBCONN = SHDB_AD
+
+#IS_OPENBROKER_SOURCE = 0
+#NEED_DATABASE = 0
+#NEED_MIDDLE_WARE = 0
+#NEED_OPENBROKER = 0
+#UNITTEST_TOTAL_ON=1
+#NEED_UNITTEST=1
+#NEED_COVERTEST=1
+
+#ADDTIONAL_INSTALL_HEADER_CMD = mkdir -p $(OB_REL)/include/public/socket_proxy && cp -rf ./mdb_proxy_socknotify.h	mdb_proxy_sockapi.h $(OB_REL)/include/public/socket_proxy
+
+########################################################
+USER_DEFS = NEED_NET_TRANS
+USER_CXXFLAGS = 
+ifeq "$(OS_TYPE)" "AIX"
+	USER_CXXFLAGS+= -qrtti
+endif
+
+USER_INC_PATH = . \
+			$(OB_REL)/include/public \
+			$(OB_REL)/include/public/common \
+			$(OB_REL)/include/public/common/log \
+			$(OB_REL)/include/public/common/base \
+			$(OB_REL)/include/3rd/otl \
+			$(OB_REL)/include/public/common/estat
+	
+
+USER_LIBRARIES = 
+
+########################################################
+
+#include $(OB_REL)/etc/NGCmake
+

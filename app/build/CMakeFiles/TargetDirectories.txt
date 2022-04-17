@@ -1,0 +1,3 @@
+/home/wilson/socket/app/build/CMakeFiles/rebuild_cache.dir
+/home/wilson/socket/app/build/CMakeFiles/mdb_proxy.dir
+/home/wilson/socket/app/build/CMakeFiles/edit_cache.dir

@@ -1,0 +1,3 @@
+/home/wilson/socket/socket_proxy/build/CMakeFiles/rebuild_cache.dir
+/home/wilson/socket/socket_proxy/build/CMakeFiles/socket_proxy.dir
+/home/wilson/socket/socket_proxy/build/CMakeFiles/edit_cache.dir

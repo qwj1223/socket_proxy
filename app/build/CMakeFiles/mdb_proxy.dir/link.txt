@@ -1,0 +1,1 @@
+/usr/bin/c++  --std=c++11   CMakeFiles/mdb_proxy.dir/source/main.cpp.o  -o mdb_proxy -lsocket_proxy 

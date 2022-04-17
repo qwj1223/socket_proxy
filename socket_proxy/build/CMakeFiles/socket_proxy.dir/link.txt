@@ -1,0 +1,2 @@
+/usr/bin/ar qc libsocket_proxy.a  CMakeFiles/socket_proxy.dir/src/mdb_proxy_sockapi.cpp.o
+/usr/bin/ranlib libsocket_proxy.a
