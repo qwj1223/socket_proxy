@@ -1,4 +1,6 @@
 #include "mdb_proxy.h"
+#include "pthread.h"
+#include <sys/prctl.h>
 
 namespace MMdbProxy
 {
@@ -30,7 +32,7 @@ namespace MMdbProxy
     }
 
     int32 CMdbProxyImpl::start_serv(int32 iPort)
-    {	 
+    {
        	int32 iRet = -1;
         pthread_attr_t attr;
         if((iRet = pthread_attr_init(&attr)) != 0)
@@ -79,6 +81,9 @@ namespace MMdbProxy
     }
 
     int32 CMdbProxyImpl::deal_client(){
+        std::string name = "deal_client";
+        prctl(PR_SET_NAME, name.c_str());
+
         int32 iSock = -1;
 		int32 iRet = 0 ;
 		while(m_bStatus)

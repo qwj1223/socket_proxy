@@ -150,6 +150,33 @@ source/main.cpp.s:
 	$(MAKE) -f CMakeFiles/mdb_proxy.dir/build.make CMakeFiles/mdb_proxy.dir/source/main.cpp.s
 .PHONY : source/main.cpp.s
 
+source/mdb_proxy.o: source/mdb_proxy.cpp.o
+
+.PHONY : source/mdb_proxy.o
+
+# target to build an object file
+source/mdb_proxy.cpp.o:
+	$(MAKE) -f CMakeFiles/mdb_proxy.dir/build.make CMakeFiles/mdb_proxy.dir/source/mdb_proxy.cpp.o
+.PHONY : source/mdb_proxy.cpp.o
+
+source/mdb_proxy.i: source/mdb_proxy.cpp.i
+
+.PHONY : source/mdb_proxy.i
+
+# target to preprocess a source file
+source/mdb_proxy.cpp.i:
+	$(MAKE) -f CMakeFiles/mdb_proxy.dir/build.make CMakeFiles/mdb_proxy.dir/source/mdb_proxy.cpp.i
+.PHONY : source/mdb_proxy.cpp.i
+
+source/mdb_proxy.s: source/mdb_proxy.cpp.s
+
+.PHONY : source/mdb_proxy.s
+
+# target to generate assembly for a file
+source/mdb_proxy.cpp.s:
+	$(MAKE) -f CMakeFiles/mdb_proxy.dir/build.make CMakeFiles/mdb_proxy.dir/source/mdb_proxy.cpp.s
+.PHONY : source/mdb_proxy.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -162,6 +189,9 @@ help:
 	@echo "... source/main.o"
 	@echo "... source/main.i"
 	@echo "... source/main.s"
+	@echo "... source/mdb_proxy.o"
+	@echo "... source/mdb_proxy.i"
+	@echo "... source/mdb_proxy.s"
 .PHONY : help
 
 

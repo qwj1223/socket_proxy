@@ -1,5 +1,6 @@
 #ifndef _QUEUE_MGR_H_
 #define _QUEUE_MGR_H_
+#include "pthread.h"
 
 #define MAX_QUEUE 200
 
@@ -17,7 +18,7 @@ namespace MMdbProxy
 
         bool full()
         {
-        	LOG_TRACE("the number of the queue is :%d\n",len);
+        	//LOG_TRACE("the number of the queue is :%d\n",len);
             return (MAX_QUEUE == len);
         }
         bool empty()
@@ -35,7 +36,7 @@ namespace MMdbProxy
             if(m_bDestory && empty())
             {
                 pthread_cond_broadcast(&emptySignal);
-                LOG_TRACE(" queue is empty,and get destory signal, will destory");
+                //LOG_TRACE(" queue is empty,and get destory signal, will destory");
             }
             else
             {
@@ -78,7 +79,7 @@ namespace MMdbProxy
             m_bDestory = true;
             pthread_cond_broadcast(&emptySignal);
             pthread_cond_broadcast(&fullSignal);
-            LOG_TRACE("get destory signal ,will destory queue empty");
+            //LOG_TRACE("get destory signal ,will destory queue empty");
         }
 		
     private: 

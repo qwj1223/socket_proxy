@@ -4,6 +4,13 @@
 #include "queue_mgr.h"
 #include "mdb_proxy_socknotify.h"
 #include "mdb_proxy_sockapi.h"
+#include "mdb_proxy_enum.h"
+
+typedef int16_t int16;
+typedef int32_t int32;
+typedef int64_t int64;
+
+using namespace std;
 
 namespace MMdbProxy
 {
@@ -20,7 +27,7 @@ namespace MMdbProxy
 		int32 			m_iTid;
 		int32 			m_iSock;
 		int32 			m_iClientSinPort;
-		AISTD string 	m_strCliendAddr;
+		string 			m_strCliendAddr;
 		CMdbProxyImpl 	*m_pProxyImpl;
 	};
 
@@ -29,6 +36,7 @@ namespace MMdbProxy
 	public:
 		CMdbProxyImpl() {m_bStatus = false;}
 		~CMdbProxyImpl() {m_bStatus = false; }
+
 		int32 start_serv(int32 iPort);
 		int32 deal_client();
 		static void* run(void *param);

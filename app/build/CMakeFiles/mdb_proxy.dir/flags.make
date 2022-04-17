@@ -6,5 +6,5 @@ CXX_FLAGS = --std=c++11
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/wilson/socket/app/include -I/home/wilson/socket/socket_proxy/include 
+CXX_INCLUDES = -I/home/wilson/socket/socket_proxy/include -I/home/wilson/socket/app/include 
 

@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/mdb_proxy.dir/source/main.cpp.o"
+  "CMakeFiles/mdb_proxy.dir/source/mdb_proxy.cpp.o"
   "mdb_proxy.pdb"
   "mdb_proxy"
 )
