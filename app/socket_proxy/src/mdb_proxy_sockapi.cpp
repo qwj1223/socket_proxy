@@ -523,12 +523,14 @@ unsigned int CSockApi::m_nMaxNotifyLen = 0;
 			sin.sin_family		= AF_INET;
 			sin.sin_addr.s_addr = htonl(INADDR_ANY);
 			sin.sin_port		= htons( m_nPort + i);
-
+			
+			int port = m_nPort + i;
+			//printf("port: %d\n", port);
 			if( bind( nSock, (struct sockaddr*)&sin, sizeof(sin)) < 0 )
 				continue;
 
 			bBind = 1;
-			break ;
+			break;
 		}
 		if( !bBind)
 		{
@@ -654,7 +656,7 @@ unsigned int CSockApi::m_nMaxNotifyLen = 0;
         	}
        		struct hostent&	host = *pHost;
        		int32 iRet = 0;
-		//gethostbyname·ÇÏß³Ì°²È«£¬ÔÚLINUX»·¾³ÏÂ£¬ÐèÒªµ÷ÕûÎªgethostbyname_r
+		//gethostbynameï¿½ï¿½ï¿½ß³Ì°ï¿½È«ï¿½ï¿½ï¿½ï¿½LINUXï¿½ï¿½ï¿½ï¿½ï¿½Â£ï¿½ï¿½ï¿½Òªï¿½ï¿½ï¿½ï¿½Îªgethostbyname_r
 		#elif defined(LINUX)
 			struct hostent	host;
 			struct hostent*  phost;

@@ -80,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wilson/socket/app/build/CMakeFiles /home/wilson/socket/app/build/CMakeFiles/progress.marks
-	$(MAKE) -f CMakeFiles/Makefile2 all
+	cd /home/wilson/socket/app/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/wilson/socket/app/build/CMakeFiles /home/wilson/socket/app/build/socket_proxy/CMakeFiles/progress.marks
+	cd /home/wilson/socket/app/build && $(MAKE) -f CMakeFiles/Makefile2 socket_proxy/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/wilson/socket/app/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) -f CMakeFiles/Makefile2 clean
+	cd /home/wilson/socket/app/build && $(MAKE) -f CMakeFiles/Makefile2 socket_proxy/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,98 +97,60 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) -f CMakeFiles/Makefile2 preinstall
+	cd /home/wilson/socket/app/build && $(MAKE) -f CMakeFiles/Makefile2 socket_proxy/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) -f CMakeFiles/Makefile2 preinstall
+	cd /home/wilson/socket/app/build && $(MAKE) -f CMakeFiles/Makefile2 socket_proxy/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/wilson/socket/app/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named mdb_proxy
+# Convenience name for target.
+socket_proxy/CMakeFiles/socket_proxy.dir/rule:
+	cd /home/wilson/socket/app/build && $(MAKE) -f CMakeFiles/Makefile2 socket_proxy/CMakeFiles/socket_proxy.dir/rule
+.PHONY : socket_proxy/CMakeFiles/socket_proxy.dir/rule
 
-# Build rule for target.
-mdb_proxy: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 mdb_proxy
-.PHONY : mdb_proxy
+# Convenience name for target.
+socket_proxy: socket_proxy/CMakeFiles/socket_proxy.dir/rule
 
-# fast build rule for target.
-mdb_proxy/fast:
-	$(MAKE) -f CMakeFiles/mdb_proxy.dir/build.make CMakeFiles/mdb_proxy.dir/build
-.PHONY : mdb_proxy/fast
-
-#=============================================================================
-# Target rules for targets named socket_proxy
-
-# Build rule for target.
-socket_proxy: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 socket_proxy
 .PHONY : socket_proxy
 
 # fast build rule for target.
 socket_proxy/fast:
-	$(MAKE) -f socket_proxy/CMakeFiles/socket_proxy.dir/build.make socket_proxy/CMakeFiles/socket_proxy.dir/build
+	cd /home/wilson/socket/app/build && $(MAKE) -f socket_proxy/CMakeFiles/socket_proxy.dir/build.make socket_proxy/CMakeFiles/socket_proxy.dir/build
 .PHONY : socket_proxy/fast
 
-source/main.o: source/main.cpp.o
+src/mdb_proxy_sockapi.o: src/mdb_proxy_sockapi.cpp.o
 
-.PHONY : source/main.o
-
-# target to build an object file
-source/main.cpp.o:
-	$(MAKE) -f CMakeFiles/mdb_proxy.dir/build.make CMakeFiles/mdb_proxy.dir/source/main.cpp.o
-.PHONY : source/main.cpp.o
-
-source/main.i: source/main.cpp.i
-
-.PHONY : source/main.i
-
-# target to preprocess a source file
-source/main.cpp.i:
-	$(MAKE) -f CMakeFiles/mdb_proxy.dir/build.make CMakeFiles/mdb_proxy.dir/source/main.cpp.i
-.PHONY : source/main.cpp.i
-
-source/main.s: source/main.cpp.s
-
-.PHONY : source/main.s
-
-# target to generate assembly for a file
-source/main.cpp.s:
-	$(MAKE) -f CMakeFiles/mdb_proxy.dir/build.make CMakeFiles/mdb_proxy.dir/source/main.cpp.s
-.PHONY : source/main.cpp.s
-
-source/mdb_proxy.o: source/mdb_proxy.cpp.o
-
-.PHONY : source/mdb_proxy.o
+.PHONY : src/mdb_proxy_sockapi.o
 
 # target to build an object file
-source/mdb_proxy.cpp.o:
-	$(MAKE) -f CMakeFiles/mdb_proxy.dir/build.make CMakeFiles/mdb_proxy.dir/source/mdb_proxy.cpp.o
-.PHONY : source/mdb_proxy.cpp.o
+src/mdb_proxy_sockapi.cpp.o:
+	cd /home/wilson/socket/app/build && $(MAKE) -f socket_proxy/CMakeFiles/socket_proxy.dir/build.make socket_proxy/CMakeFiles/socket_proxy.dir/src/mdb_proxy_sockapi.cpp.o
+.PHONY : src/mdb_proxy_sockapi.cpp.o
 
-source/mdb_proxy.i: source/mdb_proxy.cpp.i
+src/mdb_proxy_sockapi.i: src/mdb_proxy_sockapi.cpp.i
 
-.PHONY : source/mdb_proxy.i
+.PHONY : src/mdb_proxy_sockapi.i
 
 # target to preprocess a source file
-source/mdb_proxy.cpp.i:
-	$(MAKE) -f CMakeFiles/mdb_proxy.dir/build.make CMakeFiles/mdb_proxy.dir/source/mdb_proxy.cpp.i
-.PHONY : source/mdb_proxy.cpp.i
+src/mdb_proxy_sockapi.cpp.i:
+	cd /home/wilson/socket/app/build && $(MAKE) -f socket_proxy/CMakeFiles/socket_proxy.dir/build.make socket_proxy/CMakeFiles/socket_proxy.dir/src/mdb_proxy_sockapi.cpp.i
+.PHONY : src/mdb_proxy_sockapi.cpp.i
 
-source/mdb_proxy.s: source/mdb_proxy.cpp.s
+src/mdb_proxy_sockapi.s: src/mdb_proxy_sockapi.cpp.s
 
-.PHONY : source/mdb_proxy.s
+.PHONY : src/mdb_proxy_sockapi.s
 
 # target to generate assembly for a file
-source/mdb_proxy.cpp.s:
-	$(MAKE) -f CMakeFiles/mdb_proxy.dir/build.make CMakeFiles/mdb_proxy.dir/source/mdb_proxy.cpp.s
-.PHONY : source/mdb_proxy.cpp.s
+src/mdb_proxy_sockapi.cpp.s:
+	cd /home/wilson/socket/app/build && $(MAKE) -f socket_proxy/CMakeFiles/socket_proxy.dir/build.make socket_proxy/CMakeFiles/socket_proxy.dir/src/mdb_proxy_sockapi.cpp.s
+.PHONY : src/mdb_proxy_sockapi.cpp.s
 
 # Help Target
 help:
@@ -197,15 +159,11 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... mdb_proxy"
-	@echo "... edit_cache"
 	@echo "... socket_proxy"
-	@echo "... source/main.o"
-	@echo "... source/main.i"
-	@echo "... source/main.s"
-	@echo "... source/mdb_proxy.o"
-	@echo "... source/mdb_proxy.i"
-	@echo "... source/mdb_proxy.s"
+	@echo "... edit_cache"
+	@echo "... src/mdb_proxy_sockapi.o"
+	@echo "... src/mdb_proxy_sockapi.i"
+	@echo "... src/mdb_proxy_sockapi.s"
 .PHONY : help
 
 
@@ -217,6 +175,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/wilson/socket/app/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

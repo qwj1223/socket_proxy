@@ -33,6 +33,12 @@ namespace MMdbProxy
 
     int32 CMdbProxyImpl::start_serv(int32 iPort)
     {
+        std::string name = "start_serv";
+        prctl(PR_SET_NAME, name.c_str());
+
+        int cpu_id = sched_getcpu();
+        printf("start_serv cpu_id: %d\n", cpu_id);
+
        	int32 iRet = -1;
         pthread_attr_t attr;
         if((iRet = pthread_attr_init(&attr)) != 0)
@@ -83,6 +89,9 @@ namespace MMdbProxy
     int32 CMdbProxyImpl::deal_client(){
         std::string name = "deal_client";
         prctl(PR_SET_NAME, name.c_str());
+
+        int cpu_id = sched_getcpu();
+        printf("deal_client cpu_id: %d\n", cpu_id);
 
         int32 iSock = -1;
 		int32 iRet = 0 ;

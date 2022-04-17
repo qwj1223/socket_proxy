@@ -4,14 +4,14 @@
 CMakeFiles/mdb_proxy.dir/source/main.cpp.o: ../include/mdb_proxy.h
 CMakeFiles/mdb_proxy.dir/source/main.cpp.o: ../include/mdb_proxy_enum.h
 CMakeFiles/mdb_proxy.dir/source/main.cpp.o: ../include/queue_mgr.h
+CMakeFiles/mdb_proxy.dir/source/main.cpp.o: ../socket_proxy/include/mdb_proxy_sockapi.h
+CMakeFiles/mdb_proxy.dir/source/main.cpp.o: ../socket_proxy/include/mdb_proxy_socknotify.h
 CMakeFiles/mdb_proxy.dir/source/main.cpp.o: ../source/main.cpp
-CMakeFiles/mdb_proxy.dir/source/main.cpp.o: /home/wilson/socket/socket_proxy/include/mdb_proxy_sockapi.h
-CMakeFiles/mdb_proxy.dir/source/main.cpp.o: /home/wilson/socket/socket_proxy/include/mdb_proxy_socknotify.h
 
 CMakeFiles/mdb_proxy.dir/source/mdb_proxy.cpp.o: ../include/mdb_proxy.h
 CMakeFiles/mdb_proxy.dir/source/mdb_proxy.cpp.o: ../include/mdb_proxy_enum.h
 CMakeFiles/mdb_proxy.dir/source/mdb_proxy.cpp.o: ../include/queue_mgr.h
+CMakeFiles/mdb_proxy.dir/source/mdb_proxy.cpp.o: ../socket_proxy/include/mdb_proxy_sockapi.h
+CMakeFiles/mdb_proxy.dir/source/mdb_proxy.cpp.o: ../socket_proxy/include/mdb_proxy_socknotify.h
 CMakeFiles/mdb_proxy.dir/source/mdb_proxy.cpp.o: ../source/mdb_proxy.cpp
-CMakeFiles/mdb_proxy.dir/source/mdb_proxy.cpp.o: /home/wilson/socket/socket_proxy/include/mdb_proxy_sockapi.h
-CMakeFiles/mdb_proxy.dir/source/mdb_proxy.cpp.o: /home/wilson/socket/socket_proxy/include/mdb_proxy_socknotify.h
 

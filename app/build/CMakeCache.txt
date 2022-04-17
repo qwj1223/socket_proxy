@@ -206,6 +206,12 @@ mdb_proxy_BINARY_DIR:STATIC=/home/wilson/socket/app/build
 //Value Computed by CMake
 mdb_proxy_SOURCE_DIR:STATIC=/home/wilson/socket/app
 
+//Value Computed by CMake
+socket_proxy_BINARY_DIR:STATIC=/home/wilson/socket/app/build/socket_proxy
+
+//Value Computed by CMake
+socket_proxy_SOURCE_DIR:STATIC=/home/wilson/socket/app/socket_proxy
+
 
 ########################
 # INTERNAL cache entries
@@ -307,7 +313,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=1
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=2
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

@@ -6,24 +6,6 @@
 
 #IncludeRegexTransform: 
 
-../include/mdb_proxy.h
-queue_mgr.h
-../include/queue_mgr.h
-mdb_proxy_socknotify.h
-../include/mdb_proxy_socknotify.h
-mdb_proxy_sockapi.h
-../include/mdb_proxy_sockapi.h
-mdb_proxy_enum.h
-../include/mdb_proxy_enum.h
-sched.h
--
-
-../include/mdb_proxy_enum.h
-
-../include/queue_mgr.h
-pthread.h
-../include/pthread.h
-
 ../socket_proxy/include/mdb_proxy_sockapi.h
 netdb.h
 -
@@ -56,11 +38,33 @@ iostream.h
 iostream
 -
 
-/home/wilson/socket/app/source/main.cpp
-mdb_proxy.h
-/home/wilson/socket/app/source/mdb_proxy.h
-thread
+/home/wilson/socket/app/socket_proxy/src/mdb_proxy_sockapi.cpp
+stdio.h
 -
-vector
+strings.h
 -
+stdlib.h
+-
+unistd.h
+-
+signal.h
+-
+errno.h
+-
+netinet/in.h
+-
+netinet/tcp.h
+-
+stropts.h
+-
+sys/filio.h
+-
+asm/ioctls.h
+-
+sys/ioctl.h
+-
+mdb_proxy_sockapi.h
+/home/wilson/socket/app/socket_proxy/src/mdb_proxy_sockapi.h
+mdb_proxy_socknotify.h
+/home/wilson/socket/app/socket_proxy/src/mdb_proxy_socknotify.h
 

@@ -68,7 +68,7 @@ CMAKE_BINARY_DIR = /home/wilson/socket/app/build
 # Target rules for target CMakeFiles/mdb_proxy.dir
 
 # All Build rule for target.
-CMakeFiles/mdb_proxy.dir/all:
+CMakeFiles/mdb_proxy.dir/all: socket_proxy/CMakeFiles/socket_proxy.dir/all
 	$(MAKE) -f CMakeFiles/mdb_proxy.dir/build.make CMakeFiles/mdb_proxy.dir/depend
 	$(MAKE) -f CMakeFiles/mdb_proxy.dir/build.make CMakeFiles/mdb_proxy.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wilson/socket/app/build/CMakeFiles --progress-num=1,2,3 "Built target mdb_proxy"
@@ -81,7 +81,7 @@ all: CMakeFiles/mdb_proxy.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/mdb_proxy.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wilson/socket/app/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wilson/socket/app/build/CMakeFiles 5
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/mdb_proxy.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/wilson/socket/app/build/CMakeFiles 0
 .PHONY : CMakeFiles/mdb_proxy.dir/rule
@@ -98,6 +98,61 @@ CMakeFiles/mdb_proxy.dir/clean:
 
 # clean rule for target.
 clean: CMakeFiles/mdb_proxy.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory socket_proxy
+
+# Convenience name for "all" pass in the directory.
+socket_proxy/all: socket_proxy/CMakeFiles/socket_proxy.dir/all
+
+.PHONY : socket_proxy/all
+
+# Convenience name for "clean" pass in the directory.
+socket_proxy/clean: socket_proxy/CMakeFiles/socket_proxy.dir/clean
+
+.PHONY : socket_proxy/clean
+
+# Convenience name for "preinstall" pass in the directory.
+socket_proxy/preinstall:
+
+.PHONY : socket_proxy/preinstall
+
+#=============================================================================
+# Target rules for target socket_proxy/CMakeFiles/socket_proxy.dir
+
+# All Build rule for target.
+socket_proxy/CMakeFiles/socket_proxy.dir/all:
+	$(MAKE) -f socket_proxy/CMakeFiles/socket_proxy.dir/build.make socket_proxy/CMakeFiles/socket_proxy.dir/depend
+	$(MAKE) -f socket_proxy/CMakeFiles/socket_proxy.dir/build.make socket_proxy/CMakeFiles/socket_proxy.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wilson/socket/app/build/CMakeFiles --progress-num=4,5 "Built target socket_proxy"
+.PHONY : socket_proxy/CMakeFiles/socket_proxy.dir/all
+
+# Include target in all.
+all: socket_proxy/CMakeFiles/socket_proxy.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+socket_proxy/CMakeFiles/socket_proxy.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wilson/socket/app/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 socket_proxy/CMakeFiles/socket_proxy.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wilson/socket/app/build/CMakeFiles 0
+.PHONY : socket_proxy/CMakeFiles/socket_proxy.dir/rule
+
+# Convenience name for target.
+socket_proxy: socket_proxy/CMakeFiles/socket_proxy.dir/rule
+
+.PHONY : socket_proxy
+
+# clean rule for target.
+socket_proxy/CMakeFiles/socket_proxy.dir/clean:
+	$(MAKE) -f socket_proxy/CMakeFiles/socket_proxy.dir/build.make socket_proxy/CMakeFiles/socket_proxy.dir/clean
+.PHONY : socket_proxy/CMakeFiles/socket_proxy.dir/clean
+
+# clean rule for target.
+clean: socket_proxy/CMakeFiles/socket_proxy.dir/clean
 
 .PHONY : clean
 

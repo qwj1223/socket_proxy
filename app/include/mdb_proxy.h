@@ -5,6 +5,7 @@
 #include "mdb_proxy_socknotify.h"
 #include "mdb_proxy_sockapi.h"
 #include "mdb_proxy_enum.h"
+#include <sched.h>
 
 typedef int16_t int16;
 typedef int32_t int32;

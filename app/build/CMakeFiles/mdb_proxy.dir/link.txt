@@ -1,1 +1,1 @@
-/usr/bin/c++  --std=c++11   CMakeFiles/mdb_proxy.dir/source/main.cpp.o CMakeFiles/mdb_proxy.dir/source/mdb_proxy.cpp.o  -o mdb_proxy  -L/home/wilson/socket/socket_proxy/build -Wl,-rpath,/home/wilson/socket/socket_proxy/build -lsocket_proxy -lpthread 
+/usr/bin/c++  --std=c++11   CMakeFiles/mdb_proxy.dir/source/main.cpp.o CMakeFiles/mdb_proxy.dir/source/mdb_proxy.cpp.o  -o mdb_proxy  -L/home/wilson/socket/app/socket_proxy/build -Wl,-rpath,/home/wilson/socket/app/socket_proxy/build socket_proxy/libsocket_proxy.a -lpthread 
